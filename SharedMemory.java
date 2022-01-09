@@ -13,4 +13,8 @@ public class SharedMemory {
     public void write(Object address, Object value) {
         this.memory.put(address, value);
     }
+
+    public Object read(Object address) {
+        return this.memory.get(address);
+    }
 }
