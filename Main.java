@@ -4,5 +4,6 @@ class Main {
         SharedMemory x = SharedMemory.getInstance();
         SharedMemory y = SharedMemory.getInstance();
         x.write("address", "value");
+        System.out.println(y.read("address"));
     }
 }
